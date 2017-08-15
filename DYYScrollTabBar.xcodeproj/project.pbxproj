@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F8C30EE1F42D16400113048 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C30ED1F42D16400113048 /* main.m */; };
+		2F8C30F11F42D16400113048 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C30F01F42D16400113048 /* AppDelegate.m */; };
+		2F8C30F41F42D16400113048 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C30F31F42D16400113048 /* ViewController.m */; };
+		2F8C30F71F42D16400113048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C30F51F42D16400113048 /* Main.storyboard */; };
+		2F8C30F91F42D16400113048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C30F81F42D16400113048 /* Assets.xcassets */; };
+		2F8C30FC1F42D16400113048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C30FA1F42D16400113048 /* LaunchScreen.storyboard */; };
+		2F8C31071F42D16400113048 /* DYYScrollTabBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C31061F42D16400113048 /* DYYScrollTabBarTests.m */; };
+		2F8C31121F42D16400113048 /* DYYScrollTabBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C31111F42D16400113048 /* DYYScrollTabBarUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F8C31031F42D16400113048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F8C30E11F42D16400113048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F8C30E81F42D16400113048;
+			remoteInfo = DYYScrollTabBar;
+		};
+		2F8C310E1F42D16400113048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F8C30E11F42D16400113048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F8C30E81F42D16400113048;
+			remoteInfo = DYYScrollTabBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F8C30E91F42D16400113048 /* DYYScrollTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYYScrollTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8C30ED1F42D16400113048 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F8C30EF1F42D16400113048 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F8C30F01F42D16400113048 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F8C30F21F42D16400113048 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F8C30F31F42D16400113048 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F8C30F61F42D16400113048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F8C30F81F42D16400113048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F8C30FB1F42D16400113048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F8C30FD1F42D16400113048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F8C31021F42D16400113048 /* DYYScrollTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYYScrollTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8C31061F42D16400113048 /* DYYScrollTabBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYYScrollTabBarTests.m; sourceTree = "<group>"; };
+		2F8C31081F42D16400113048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F8C310D1F42D16400113048 /* DYYScrollTabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYYScrollTabBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8C31111F42D16400113048 /* DYYScrollTabBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYYScrollTabBarUITests.m; sourceTree = "<group>"; };
+		2F8C31131F42D16400113048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F8C30E61F42D16400113048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8C30FF1F42D16400113048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8C310A1F42D16400113048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F8C30E01F42D16400113048 = {
+			isa = PBXGroup;
+			children = (
+				2F8C30EB1F42D16400113048 /* DYYScrollTabBar */,
+				2F8C31051F42D16400113048 /* DYYScrollTabBarTests */,
+				2F8C31101F42D16400113048 /* DYYScrollTabBarUITests */,
+				2F8C30EA1F42D16400113048 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F8C30EA1F42D16400113048 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C30E91F42D16400113048 /* DYYScrollTabBar.app */,
+				2F8C31021F42D16400113048 /* DYYScrollTabBarTests.xctest */,
+				2F8C310D1F42D16400113048 /* DYYScrollTabBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F8C30EB1F42D16400113048 /* DYYScrollTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C30EF1F42D16400113048 /* AppDelegate.h */,
+				2F8C30F01F42D16400113048 /* AppDelegate.m */,
+				2F8C30F21F42D16400113048 /* ViewController.h */,
+				2F8C30F31F42D16400113048 /* ViewController.m */,
+				2F8C30F51F42D16400113048 /* Main.storyboard */,
+				2F8C30F81F42D16400113048 /* Assets.xcassets */,
+				2F8C30FA1F42D16400113048 /* LaunchScreen.storyboard */,
+				2F8C30FD1F42D16400113048 /* Info.plist */,
+				2F8C30EC1F42D16400113048 /* Supporting Files */,
+			);
+			path = DYYScrollTabBar;
+			sourceTree = "<group>";
+		};
+		2F8C30EC1F42D16400113048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C30ED1F42D16400113048 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F8C31051F42D16400113048 /* DYYScrollTabBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C31061F42D16400113048 /* DYYScrollTabBarTests.m */,
+				2F8C31081F42D16400113048 /* Info.plist */,
+			);
+			path = DYYScrollTabBarTests;
+			sourceTree = "<group>";
+		};
+		2F8C31101F42D16400113048 /* DYYScrollTabBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C31111F42D16400113048 /* DYYScrollTabBarUITests.m */,
+				2F8C31131F42D16400113048 /* Info.plist */,
+			);
+			path = DYYScrollTabBarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F8C30E81F42D16400113048 /* DYYScrollTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F8C31161F42D16400113048 /* Build configuration list for PBXNativeTarget "DYYScrollTabBar" */;
+			buildPhases = (
+				2F8C30E51F42D16400113048 /* Sources */,
+				2F8C30E61F42D16400113048 /* Frameworks */,
+				2F8C30E71F42D16400113048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYYScrollTabBar;
+			productName = DYYScrollTabBar;
+			productReference = 2F8C30E91F42D16400113048 /* DYYScrollTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F8C31011F42D16400113048 /* DYYScrollTabBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F8C31191F42D16400113048 /* Build configuration list for PBXNativeTarget "DYYScrollTabBarTests" */;
+			buildPhases = (
+				2F8C30FE1F42D16400113048 /* Sources */,
+				2F8C30FF1F42D16400113048 /* Frameworks */,
+				2F8C31001F42D16400113048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F8C31041F42D16400113048 /* PBXTargetDependency */,
+			);
+			name = DYYScrollTabBarTests;
+			productName = DYYScrollTabBarTests;
+			productReference = 2F8C31021F42D16400113048 /* DYYScrollTabBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F8C310C1F42D16400113048 /* DYYScrollTabBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F8C311C1F42D16400113048 /* Build configuration list for PBXNativeTarget "DYYScrollTabBarUITests" */;
+			buildPhases = (
+				2F8C31091F42D16400113048 /* Sources */,
+				2F8C310A1F42D16400113048 /* Frameworks */,
+				2F8C310B1F42D16400113048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F8C310F1F42D16400113048 /* PBXTargetDependency */,
+			);
+			name = DYYScrollTabBarUITests;
+			productName = DYYScrollTabBarUITests;
+			productReference = 2F8C310D1F42D16400113048 /* DYYScrollTabBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F8C30E11F42D16400113048 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = dingyangyang;
+				TargetAttributes = {
+					2F8C30E81F42D16400113048 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 7GGDE944PX;
+						ProvisioningStyle = Automatic;
+					};
+					2F8C31011F42D16400113048 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 7GGDE944PX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F8C30E81F42D16400113048;
+					};
+					2F8C310C1F42D16400113048 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 7GGDE944PX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F8C30E81F42D16400113048;
+					};
+				};
+			};
+			buildConfigurationList = 2F8C30E41F42D16400113048 /* Build configuration list for PBXProject "DYYScrollTabBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F8C30E01F42D16400113048;
+			productRefGroup = 2F8C30EA1F42D16400113048 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F8C30E81F42D16400113048 /* DYYScrollTabBar */,
+				2F8C31011F42D16400113048 /* DYYScrollTabBarTests */,
+				2F8C310C1F42D16400113048 /* DYYScrollTabBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F8C30E71F42D16400113048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8C30FC1F42D16400113048 /* LaunchScreen.storyboard in Resources */,
+				2F8C30F91F42D16400113048 /* Assets.xcassets in Resources */,
+				2F8C30F71F42D16400113048 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8C31001F42D16400113048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8C310B1F42D16400113048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F8C30E51F42D16400113048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8C30F41F42D16400113048 /* ViewController.m in Sources */,
+				2F8C30F11F42D16400113048 /* AppDelegate.m in Sources */,
+				2F8C30EE1F42D16400113048 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8C30FE1F42D16400113048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8C31071F42D16400113048 /* DYYScrollTabBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8C31091F42D16400113048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8C31121F42D16400113048 /* DYYScrollTabBarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F8C31041F42D16400113048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F8C30E81F42D16400113048 /* DYYScrollTabBar */;
+			targetProxy = 2F8C31031F42D16400113048 /* PBXContainerItemProxy */;
+		};
+		2F8C310F1F42D16400113048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F8C30E81F42D16400113048 /* DYYScrollTabBar */;
+			targetProxy = 2F8C310E1F42D16400113048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F8C30F51F42D16400113048 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F8C30F61F42D16400113048 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F8C30FA1F42D16400113048 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F8C30FB1F42D16400113048 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F8C31141F42D16400113048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F8C31151F42D16400113048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F8C31171F42D16400113048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7GGDE944PX;
+				INFOPLIST_FILE = DYYScrollTabBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dingyangyang.DYYScrollTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F8C31181F42D16400113048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7GGDE944PX;
+				INFOPLIST_FILE = DYYScrollTabBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dingyangyang.DYYScrollTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2F8C311A1F42D16400113048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7GGDE944PX;
+				INFOPLIST_FILE = DYYScrollTabBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dingyangyang.DYYScrollTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYYScrollTabBar.app/DYYScrollTabBar";
+			};
+			name = Debug;
+		};
+		2F8C311B1F42D16400113048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7GGDE944PX;
+				INFOPLIST_FILE = DYYScrollTabBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dingyangyang.DYYScrollTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYYScrollTabBar.app/DYYScrollTabBar";
+			};
+			name = Release;
+		};
+		2F8C311D1F42D16400113048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7GGDE944PX;
+				INFOPLIST_FILE = DYYScrollTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dingyangyang.DYYScrollTabBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DYYScrollTabBar;
+			};
+			name = Debug;
+		};
+		2F8C311E1F42D16400113048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7GGDE944PX;
+				INFOPLIST_FILE = DYYScrollTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dingyangyang.DYYScrollTabBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DYYScrollTabBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F8C30E41F42D16400113048 /* Build configuration list for PBXProject "DYYScrollTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F8C31141F42D16400113048 /* Debug */,
+				2F8C31151F42D16400113048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F8C31161F42D16400113048 /* Build configuration list for PBXNativeTarget "DYYScrollTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F8C31171F42D16400113048 /* Debug */,
+				2F8C31181F42D16400113048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2F8C31191F42D16400113048 /* Build configuration list for PBXNativeTarget "DYYScrollTabBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F8C311A1F42D16400113048 /* Debug */,
+				2F8C311B1F42D16400113048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2F8C311C1F42D16400113048 /* Build configuration list for PBXNativeTarget "DYYScrollTabBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F8C311D1F42D16400113048 /* Debug */,
+				2F8C311E1F42D16400113048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F8C30E11F42D16400113048 /* Project object */;
+}
