@@ -13,7 +13,7 @@
 static CGFloat const DYYNavBarH = 64;
 
 // 标题滚动视图的高度
-static CGFloat const DYYTitleScrollViewH = 44;
+static CGFloat const DYYTitleScrollViewH = 35;
 
 // 下划线默认高度
 static CGFloat const DYYIndicatorH = 2;

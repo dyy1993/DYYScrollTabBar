@@ -32,7 +32,6 @@
     for (UIViewController *VC in childVCs) {
         [self addChildViewController:VC];
     }
-    self.contentView.frame = self.view.bounds;
     self.contentView.contentSize = CGSizeMake(self.view.bounds.size.width * childVCs.count, 0);
     self.scrollTabBar.selectIndex = 0;
 
@@ -72,6 +71,8 @@
 -(void)viewWillLayoutSubviews{
 
     [super viewWillLayoutSubviews];
+    NSLog(@"布局子控件");
+
     if (self.scrollTabBar.superview == self.view) {
         CGFloat statusH = [UIApplication sharedApplication].statusBarFrame.size.height;
 
@@ -80,6 +81,7 @@
         self.scrollTabBar.frame = CGRectMake(0, titleY, self.view.frame.size.width, DYYTitleScrollViewH);
         
         self.contentView.frame = CGRectMake(0, CGRectGetMaxY(self.scrollTabBar.frame), self.view.frame.size.width, self.view.frame.size.height - CGRectGetMaxY(self.scrollTabBar.frame));
+        
         self.contentView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.frame.size.width, 0);
 
         return;
@@ -88,6 +90,7 @@
     
     self.contentView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     self.contentView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.frame.size.width, 0);
+
     
 }
 #pragma mark - layz

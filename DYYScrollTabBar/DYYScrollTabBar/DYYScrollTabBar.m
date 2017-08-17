@@ -52,10 +52,7 @@
         btn.tag = self.itemBtns.count;
         [self.contentView addSubview:btn];
         [self.itemBtns addObject:btn];
-        
-        
-    }
-    
+     }
     [self setNeedsLayout];
     [self layoutIfNeeded];
 }
@@ -89,6 +86,7 @@
     if ([self.delegate respondsToSelector:@selector(scrollTabBar:didSelectIndex:)]) {
         [self.delegate scrollTabBar:self didSelectIndex:btn.tag];
     }
+    _selectIndex = btn.tag;
     _lastBtn.selected = NO;
     btn.selected = YES;
     
@@ -104,8 +102,8 @@
         self.indicatorView.center = center;
     }];
     
-    CGFloat scrollX = btn.center.x - self.contentView.center.x;
-    if (scrollX < 0) {
+    CGFloat scrollX = btn.center.x - self.contentView.frame.size.width * 0.5;
+    if (scrollX < 0 || self.contentView.frame.size.width == 0) {
         scrollX = 0;
     }
     CGFloat maxScrollX = self.contentView.contentSize.width - self.contentView.frame.size.width;
@@ -120,7 +118,6 @@
 -(void)layoutSubviews{
 
     [super layoutSubviews];
-    self.contentView.frame = self.bounds;
     CGFloat totalBtnWith = 0;
     for (UIButton *btn in self.itemBtns) {
         [btn sizeToFit];
@@ -142,6 +139,8 @@
         last_x += btn.frame.size.width + magin;
         
         }
+    self.contentView.frame = self.bounds;
+
     self.contentView.contentSize = CGSizeMake(last_x, 0);
     
     if (self.itemBtns.count == 0) {
