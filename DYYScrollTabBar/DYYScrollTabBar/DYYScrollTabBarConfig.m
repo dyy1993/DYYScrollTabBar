@@ -11,13 +11,13 @@
 @implementation DYYScrollTabBarConfig
 + (instancetype)defaultConfig{
     DYYScrollTabBarConfig *config = [[DYYScrollTabBarConfig alloc] init];
-    config.scrollTabBarBackgroundColor = [UIColor blueColor];
-    config.itemNormalColor = [UIColor whiteColor];
+    config.scrollTabBarBackgroundColor = [UIColor whiteColor];
+    config.itemNormalColor = [UIColor grayColor];
     config.itemSelectColor = [UIColor redColor];
     config.itemFont = [UIFont systemFontOfSize:14];
     config.indicatorColor = [UIColor redColor];
     config.indicatorHeight = 2;
-    config.indicatorExtraW = 40;
+    config.indicatorExtraW = 5;
 
     return config;
 }

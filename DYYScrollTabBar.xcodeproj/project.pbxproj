@@ -18,8 +18,6 @@
 		2F8C31221F42E14900113048 /* DYYScrollTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C31211F42E14900113048 /* DYYScrollTabBar.m */; };
 		2F8C31251F42E19A00113048 /* DYYScrollTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C31241F42E19A00113048 /* DYYScrollTabBarController.m */; };
 		2F8C31281F42E56100113048 /* DYYScrollTabBarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C31271F42E56100113048 /* DYYScrollTabBarConfig.m */; };
-		2F8C312C1F441CEE00113048 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C312A1F441CEE00113048 /* TestViewController.m */; };
-		2F8C312D1F441CEE00113048 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C312B1F441CEE00113048 /* TestViewController.xib */; };
 		2F8C31301F4428DD00113048 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C312F1F4428DD00113048 /* Test2ViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -63,9 +61,6 @@
 		2F8C31241F42E19A00113048 /* DYYScrollTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYYScrollTabBarController.m; sourceTree = "<group>"; };
 		2F8C31261F42E56100113048 /* DYYScrollTabBarConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYYScrollTabBarConfig.h; sourceTree = "<group>"; };
 		2F8C31271F42E56100113048 /* DYYScrollTabBarConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYYScrollTabBarConfig.m; sourceTree = "<group>"; };
-		2F8C31291F441CEE00113048 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		2F8C312A1F441CEE00113048 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		2F8C312B1F441CEE00113048 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		2F8C312E1F4428DD00113048 /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
 		2F8C312F1F4428DD00113048 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,9 +123,6 @@
 				2F8C30FA1F42D16400113048 /* LaunchScreen.storyboard */,
 				2F8C30FD1F42D16400113048 /* Info.plist */,
 				2F8C30EC1F42D16400113048 /* Supporting Files */,
-				2F8C31291F441CEE00113048 /* TestViewController.h */,
-				2F8C312A1F441CEE00113048 /* TestViewController.m */,
-				2F8C312B1F441CEE00113048 /* TestViewController.xib */,
 				2F8C312E1F4428DD00113048 /* Test2ViewController.h */,
 				2F8C312F1F4428DD00113048 /* Test2ViewController.m */,
 			);
@@ -286,7 +278,6 @@
 			files = (
 				2F8C30FC1F42D16400113048 /* LaunchScreen.storyboard in Resources */,
 				2F8C30F91F42D16400113048 /* Assets.xcassets in Resources */,
-				2F8C312D1F441CEE00113048 /* TestViewController.xib in Resources */,
 				2F8C30F71F42D16400113048 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +306,6 @@
 				2F8C30F41F42D16400113048 /* ViewController.m in Sources */,
 				2F8C31301F4428DD00113048 /* Test2ViewController.m in Sources */,
 				2F8C31221F42E14900113048 /* DYYScrollTabBar.m in Sources */,
-				2F8C312C1F441CEE00113048 /* TestViewController.m in Sources */,
 				2F8C30F11F42D16400113048 /* AppDelegate.m in Sources */,
 				2F8C31281F42E56100113048 /* DYYScrollTabBarConfig.m in Sources */,
 				2F8C31251F42E19A00113048 /* DYYScrollTabBarController.m in Sources */,
@@ -557,6 +547,7 @@
 				2F8C31181F42D16400113048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F8C31191F42D16400113048 /* Build configuration list for PBXNativeTarget "DYYScrollTabBarTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +556,7 @@
 				2F8C311B1F42D16400113048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F8C311C1F42D16400113048 /* Build configuration list for PBXNativeTarget "DYYScrollTabBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +565,7 @@
 				2F8C311E1F42D16400113048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

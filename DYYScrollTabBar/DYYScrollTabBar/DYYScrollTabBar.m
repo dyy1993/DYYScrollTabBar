@@ -9,13 +9,15 @@
 #import "DYYScrollTabBar.h"
 #import "DYYScrollTabBarConfig.h"
 #define MIN_MAGIN 20
-@interface DYYScrollTabBar()
+@interface DYYScrollTabBar(){
+
+    UIButton *_lastBtn;
+}
 @property (nonatomic, strong)DYYScrollTabBarConfig *config;
 
 @property (nonatomic, strong)UIScrollView *contentView;
 @property (nonatomic, strong)NSMutableArray <UIButton *> *itemBtns;
 @property (nonatomic, strong)UIView *indicatorView;
-@property (nonatomic, assign)NSInteger selectIndex;
 
 
 @end
@@ -39,7 +41,6 @@
     
     [self.itemBtns makeObjectsPerformSelector:@selector(removeFromSuperview)];
     self.itemBtns = nil;
-    
     for (NSString *title in items) {
         
         UIButton *btn = [[UIButton alloc] init];
@@ -48,7 +49,6 @@
         [btn setTitleColor:self.config.itemNormalColor forState:UIControlStateNormal];
         [btn setTitleColor:self.config.itemSelectColor forState:UIControlStateSelected];
         btn.titleLabel.font = self.config.itemFont;
-        
         btn.tag = self.itemBtns.count;
         [self.contentView addSubview:btn];
         [self.itemBtns addObject:btn];
@@ -59,15 +59,68 @@
     [self setNeedsLayout];
     [self layoutIfNeeded];
 }
-- (void)btnClick:(UIButton *)btn{
+-(void)updateWithConfig:(void(^)(DYYScrollTabBarConfig *config))configBlock{
 
+    if (configBlock) {
+        configBlock(self.config);
+    }
+    
+    self.backgroundColor = self.config.scrollTabBarBackgroundColor;
+    for (UIButton *btn in self.itemBtns) {
+        [btn setTitleColor:self.config.itemNormalColor forState:UIControlStateNormal];
+        [btn setTitleColor:self.config.itemSelectColor forState:UIControlStateSelected];
+        btn.titleLabel.font = self.config.itemFont;
+    }
+    
+    self.indicatorView.backgroundColor = self.config.indicatorColor;
+    
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+
+}
+-(void)setSelectIndex:(NSInteger)selectIndex{
+    
+    _selectIndex = selectIndex;
+    [self btnClick:self.itemBtns[selectIndex]];
     
 }
+- (void)btnClick:(UIButton *)btn{
+
+    if ([self.delegate respondsToSelector:@selector(scrollTabBar:didSelectIndex:)]) {
+        [self.delegate scrollTabBar:self didSelectIndex:btn.tag];
+    }
+    _lastBtn.selected = NO;
+    btn.selected = YES;
+    
+    _lastBtn = btn;
+
+    [UIView animateWithDuration:0.1 animations:^{
+        CGRect frame = self.indicatorView.frame;
+        frame.size.width = btn.frame.size.width + self.config.indicatorExtraW * 2;
+        self.indicatorView.frame = frame;
+        
+        CGPoint center = self.indicatorView.center;
+        center.x = btn.center.x;
+        self.indicatorView.center = center;
+    }];
+    
+    CGFloat scrollX = btn.center.x - self.contentView.center.x;
+    if (scrollX < 0) {
+        scrollX = 0;
+    }
+    CGFloat maxScrollX = self.contentView.contentSize.width - self.contentView.frame.size.width;
+    if (scrollX > maxScrollX) {
+        scrollX = maxScrollX;
+    }
+    [self.contentView setContentOffset:CGPointMake(scrollX, 0) animated:YES];
+}
+
+
 #pragma mark - 布局控件
 -(void)layoutSubviews{
 
     [super layoutSubviews];
-    
+    self.contentView.frame = self.bounds;
     CGFloat totalBtnWith = 0;
     for (UIButton *btn in self.itemBtns) {
         [btn sizeToFit];
@@ -136,7 +189,7 @@
 -(UIScrollView *)contentView{
 
     if (!_contentView) {
-        UIScrollView *contentView = [[UIScrollView alloc] initWithFrame:self.bounds];
+        UIScrollView *contentView = [[UIScrollView alloc] init];
         contentView.showsHorizontalScrollIndicator = NO;
         [self addSubview:contentView];
         _contentView = contentView;

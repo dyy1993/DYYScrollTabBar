@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "DYYScrollTabBarConfig.h"
+@class DYYScrollTabBar;
+@protocol DYYScrollTabBarDelegate <NSObject>
+
+-(void)scrollTabBar:(DYYScrollTabBar *)scrollTabBar didSelectIndex:(NSInteger)selectIndex;
+@end
 @interface DYYScrollTabBar : UIView
 
 /**
@@ -20,4 +25,10 @@
 + (instancetype)scrollTabBarWithFrame:(CGRect)frame;
 
 @property (nonatomic, strong)NSArray <NSString *> *items;
+
+@property (nonatomic, assign)NSInteger selectIndex;
+
+
+@property (nonatomic, weak)id<DYYScrollTabBarDelegate> delegate;
+-(void)updateWithConfig:(void(^)(DYYScrollTabBarConfig *config))configBlock;
 @end

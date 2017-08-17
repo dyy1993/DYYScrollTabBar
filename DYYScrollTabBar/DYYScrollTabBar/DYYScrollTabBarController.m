@@ -8,7 +8,7 @@
 
 #import "DYYScrollTabBarController.h"
 
-@interface DYYScrollTabBarController ()<UIScrollViewDelegate>
+@interface DYYScrollTabBarController ()<UIScrollViewDelegate, DYYScrollTabBarDelegate>
 @property (nonatomic, strong)UIScrollView *contentView;
 
 @end
@@ -23,18 +23,19 @@
 }
 
 - (void)setUpWithItems:(NSArray <NSString *>*)items childVCs:(NSArray <UIViewController *>*)childVCs{
-    NSAssert(items.count != 0 || items.count == childVCs.count, @"个数不一致, 请自己检查");
+    NSAssert(items.count != 0 && items.count == childVCs.count, @"控制器与标题数量不一致, 请传相同数量");
 
     
-    [childVCs makeObjectsPerformSelector:@selector(removeFromParentViewController)];
-    
+    [self.childViewControllers makeObjectsPerformSelector:@selector(removeFromParentViewController)];
+    self.scrollTabBar.items = items;
+
     for (UIViewController *VC in childVCs) {
         [self addChildViewController:VC];
     }
     self.contentView.frame = self.view.bounds;
     self.contentView.contentSize = CGSizeMake(self.view.bounds.size.width * childVCs.count, 0);
-    self.scrollTabBar.items = items;
-    [self showChildViewAtIndex:0];
+    self.scrollTabBar.selectIndex = 0;
+
 
     
 }
@@ -52,14 +53,19 @@
     [self.contentView setContentOffset:CGPointMake(VC.view.frame.origin.x, 0) animated:YES];
     
 }
+#pragma mark - scrollTabBarDelegate
+-(void)scrollTabBar:(DYYScrollTabBar *)scrollTabBar didSelectIndex:(NSInteger)selectIndex{
+
+    [self showChildViewAtIndex:selectIndex];
+
+}
 #pragma mark - scrollViewDelegate
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
 
-    NSLog(@"%@",NSStringFromCGPoint(scrollView.contentOffset));
     NSInteger index = scrollView.contentOffset.x / scrollView.frame.size.width;
-    [self showChildViewAtIndex:index];
 
+    self.scrollTabBar.selectIndex = index;
 }
 #pragma mark - 布局
 
@@ -67,10 +73,11 @@
 
     [super viewWillLayoutSubviews];
     if (self.scrollTabBar.superview == self.view) {
-        self.scrollTabBar.frame = CGRectMake(0, 60, self.view.frame.size.width, 40);
+        self.scrollTabBar.frame = CGRectMake(0, 64, self.view.frame.size.width, 30);
         
         self.contentView.frame = CGRectMake(0, CGRectGetMaxY(self.scrollTabBar.frame), self.view.frame.size.width, self.view.frame.size.height - CGRectGetMaxY(self.scrollTabBar.frame));
         self.contentView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.frame.size.width, 0);
+
         return;
         
     }
@@ -84,7 +91,7 @@
 -(UIScrollView *)contentView{
 
     if (!_contentView) {
-        UIScrollView *contentView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+        UIScrollView *contentView = [[UIScrollView alloc] init];
         contentView.delegate = self;
         contentView.pagingEnabled = YES;
         [self.view addSubview:contentView];
@@ -96,6 +103,7 @@
     
     if (!_scrollTabBar) {
         DYYScrollTabBar *scrollTabBar = [DYYScrollTabBar scrollTabBarWithFrame:CGRectZero];
+        scrollTabBar.delegate = self;
         [self.view addSubview:scrollTabBar];
         _scrollTabBar = scrollTabBar;
     }
