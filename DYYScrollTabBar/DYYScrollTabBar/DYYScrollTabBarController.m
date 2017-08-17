@@ -7,7 +7,7 @@
 //
 
 #import "DYYScrollTabBarController.h"
-
+#import "DYYScrollTabBarHeader.h"
 @interface DYYScrollTabBarController ()<UIScrollViewDelegate, DYYScrollTabBarDelegate>
 @property (nonatomic, strong)UIScrollView *contentView;
 
@@ -73,7 +73,11 @@
 
     [super viewWillLayoutSubviews];
     if (self.scrollTabBar.superview == self.view) {
-        self.scrollTabBar.frame = CGRectMake(0, 64, self.view.frame.size.width, 30);
+        CGFloat statusH = [UIApplication sharedApplication].statusBarFrame.size.height;
+
+        CGFloat titleY = self.navigationController.navigationBarHidden == NO ? 64 : statusH;
+        
+        self.scrollTabBar.frame = CGRectMake(0, titleY, self.view.frame.size.width, DYYTitleScrollViewH);
         
         self.contentView.frame = CGRectMake(0, CGRectGetMaxY(self.scrollTabBar.frame), self.view.frame.size.width, self.view.frame.size.height - CGRectGetMaxY(self.scrollTabBar.frame));
         self.contentView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.frame.size.width, 0);

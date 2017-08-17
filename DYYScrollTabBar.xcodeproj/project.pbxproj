@@ -63,6 +63,7 @@
 		2F8C31271F42E56100113048 /* DYYScrollTabBarConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYYScrollTabBarConfig.m; sourceTree = "<group>"; };
 		2F8C312E1F4428DD00113048 /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
 		2F8C312F1F4428DD00113048 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		2FE4CACC1F456C6E007F2D5C /* DYYScrollTabBarHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYYScrollTabBarHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +165,7 @@
 				2F8C31241F42E19A00113048 /* DYYScrollTabBarController.m */,
 				2F8C31261F42E56100113048 /* DYYScrollTabBarConfig.h */,
 				2F8C31271F42E56100113048 /* DYYScrollTabBarConfig.m */,
+				2FE4CACC1F456C6E007F2D5C /* DYYScrollTabBarHeader.h */,
 			);
 			path = DYYScrollTabBar;
 			sourceTree = "<group>";

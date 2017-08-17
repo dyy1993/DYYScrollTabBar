@@ -46,7 +46,9 @@
     vc5.view.backgroundColor = [UIColor brownColor];
     Test2ViewController *vc6 = [[Test2ViewController alloc] init];
     vc6.view.backgroundColor = [UIColor brownColor];
-    [self.scrollTabBarController setUpWithItems:@[@"英雄联盟",@"守望先锋",@"暗黑",@"美颜",@"野外直播",@"娱乐天地"] childVCs:@[vc1,vc2,vc3,vc4,vc5,vc6]];
+    Test2ViewController *vc7 = [[Test2ViewController alloc] init];
+    vc7.view.backgroundColor = [UIColor brownColor];
+    [self.scrollTabBarController setUpWithItems:@[@"英雄联盟",@"守望先锋",@"暗黑",@"美颜",@"野外直播",@"娱乐天地",@"营养师"] childVCs:@[vc1,vc2,vc3,vc4,vc5,vc6,vc7]];
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        
 //        [self.scrollTabBarController.scrollTabBar updateWithConfig:^(DYYScrollTabBarConfig *config) {

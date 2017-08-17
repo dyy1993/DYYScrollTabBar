@@ -7,17 +7,17 @@
 //
 
 #import "DYYScrollTabBarConfig.h"
-
+#import "DYYScrollTabBarHeader.h"
 @implementation DYYScrollTabBarConfig
 + (instancetype)defaultConfig{
     DYYScrollTabBarConfig *config = [[DYYScrollTabBarConfig alloc] init];
     config.scrollTabBarBackgroundColor = [UIColor whiteColor];
     config.itemNormalColor = [UIColor grayColor];
     config.itemSelectColor = [UIColor redColor];
-    config.itemFont = [UIFont systemFontOfSize:14];
+    config.itemFont = DYYTitleFont;
     config.indicatorColor = [UIColor redColor];
-    config.indicatorHeight = 2;
-    config.indicatorExtraW = 5;
+    config.indicatorHeight = DYYIndicatorH;
+    config.indicatorExtraW = DYYIndicatorExtraW;
 
     return config;
 }

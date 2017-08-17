@@ -8,7 +8,7 @@
 
 #import "DYYScrollTabBar.h"
 #import "DYYScrollTabBarConfig.h"
-#define MIN_MAGIN 20
+#import "DYYScrollTabBarHeader.h"
 @interface DYYScrollTabBar(){
 
     UIButton *_lastBtn;
@@ -128,8 +128,8 @@
     }
     CGFloat magin = 0;
     magin = (self.bounds.size.width - totalBtnWith) / (self.itemBtns.count + 1);
-    if (magin < MIN_MAGIN) {
-        magin = MIN_MAGIN;
+    if (magin < DYYMinMagin) {
+        magin = DYYMinMagin;
     }
     CGFloat last_x = magin;
     for (UIButton *btn in self.itemBtns) {
